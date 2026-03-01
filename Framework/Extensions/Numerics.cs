@@ -89,7 +89,7 @@ public static partial class Extensions
 		/// Floors the individual components of a <see cref="Vector2"/>
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		public Vector2 Floor() => Vector2.Truncate(vector);
+		public Vector2 Floor() => new(float.Floor(vector.X), float.Floor(vector.Y));
 
 		/// <summary>
 		/// Rounds the individual components of a <see cref="Vector2"/> to the nearest even number.
