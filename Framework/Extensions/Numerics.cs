@@ -319,7 +319,7 @@ public static partial class Extensions
 		/// Floors the individual components of a <see cref="Vector3"/>
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		public Vector3 Floor() => Vector3.Truncate(vector);
+		public Vector3 Floor() => new(float.Floor(vector.X), float.Floor(vector.Y), float.Floor(vector.Z));
 
 		/// <summary>
 		/// Ceilings the individual components of a <see cref="Vector3"/>
@@ -365,7 +365,7 @@ public static partial class Extensions
 		/// Floors the individual components of a <see cref="Vector4"/>
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		public Vector4 Floor() => Vector4.Truncate(vector);
+		public Vector4 Floor() => new(float.Floor(vector.X), float.Floor(vector.Y), float.Floor(vector.Z), float.Floor(vector.W));
 
 		/// <summary>
 		/// Ceilings the individual components of a <see cref="Vector4"/>
