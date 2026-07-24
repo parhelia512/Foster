@@ -4,8 +4,8 @@ using System.Runtime.InteropServices;
 namespace Foster.Framework;
 
 /// <summary>
-/// Queries and rasterizes characters from a Font File.
-/// To draw a font to the screen, use <see cref="SpriteFont"/>.
+/// Queries and rasterizes characters from a Font File.<br/>
+/// To draw a font using the GPU, use <see cref="SpriteFont"/>.
 /// </summary>
 public class Font : IDisposable, IProvideKerning
 {

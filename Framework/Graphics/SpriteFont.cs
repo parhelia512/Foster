@@ -3,7 +3,7 @@ using System.Numerics;
 namespace Foster.Framework;
 
 /// <summary>
-/// A Font used to render text to a Sprite <see cref="Batcher"/>.
+/// A font with a collection of pre-rendered characters used to draw text.
 /// </summary>
 public class SpriteFont : IDisposable
 {
